@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{595FCA1B-71B9-410A-BB6E-83B39C846FCD}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mycleanflight-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mycleanflight-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mycleanflight-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mycleanflight-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\startup_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cryp.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cryp_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dcmi.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma2d.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_eth.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hash.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hash_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hcd.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_irda.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_ltdc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_msp_template.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_nand.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_nor.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pccard.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sai.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sdram.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_smartcard.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_wwdg.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fmc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c" />
+    <ClCompile Include="LEDBlink.cpp" />
+    <ClCompile Include="main\blackbox\blackbox.c" />
+    <ClCompile Include="main\blackbox\blackbox_io.c" />
+    <ClCompile Include="main\build\build_config.c" />
+    <ClCompile Include="main\build\debug.c" />
+    <ClCompile Include="main\build\version.c" />
+    <ClCompile Include="main\common\colorconversion.c" />
+    <ClCompile Include="main\common\crc.c" />
+    <ClCompile Include="main\common\encoding.c" />
+    <ClCompile Include="main\common\filter.c" />
+    <ClCompile Include="main\common\maths.c" />
+    <ClCompile Include="main\common\printf.c" />
+    <ClCompile Include="main\common\streambuf.c" />
+    <ClCompile Include="main\common\typeconversion.c" />
+    <ClCompile Include="main\config\config_eeprom.c" />
+    <ClCompile Include="main\config\config_streamer.c" />
+    <ClCompile Include="main\config\feature.c" />
+    <ClCompile Include="main\config\parameter_group.c" />
+    <ClCompile Include="main\config\profile.c" />
+    <ClCompile Include="main\drivers\accgyro_adxl345.c" />
+    <ClCompile Include="main\drivers\accgyro_bma280.c" />
+    <ClCompile Include="main\drivers\accgyro_l3g4200d.c" />
+    <ClCompile Include="main\drivers\accgyro_l3gd20.c" />
+    <ClCompile Include="main\drivers\accgyro_lsm303dlhc.c" />
+    <ClCompile Include="main\drivers\accgyro_mma845x.c" />
+    <ClCompile Include="main\drivers\accgyro_mpu.c" />
+    <ClCompile Include="main\drivers\accgyro_mpu3050.c" />
+    <ClCompile Include="main\drivers\accgyro_mpu6050.c" />
+    <ClCompile Include="main\drivers\accgyro_mpu6500.c" />
+    <ClCompile Include="main\drivers\accgyro_spi_mpu6000.c" />
+    <ClCompile Include="main\drivers\accgyro_spi_mpu6500.c" />
+    <ClCompile Include="main\drivers\adc.c" />
+    <ClCompile Include="main\drivers\adc_stm32f10x.c" />
+    <ClCompile Include="main\drivers\adc_stm32f30x.c" />
+    <ClCompile Include="main\drivers\barometer_bmp085.c" />
+    <ClCompile Include="main\drivers\barometer_bmp280.c" />
+    <ClCompile Include="main\drivers\barometer_ms5611.c" />
+    <ClCompile Include="main\drivers\buf_writer.c" />
+    <ClCompile Include="main\drivers\bus_i2c_soft.c" />
+    <ClCompile Include="main\drivers\bus_i2c_stm32f10x.c" />
+    <ClCompile Include="main\drivers\bus_i2c_stm32f30x.c" />
+    <ClCompile Include="main\drivers\bus_spi.c" />
+    <ClCompile Include="main\drivers\compass_ak8963.c" />
+    <ClCompile Include="main\drivers\compass_ak8975.c" />
+    <ClCompile Include="main\drivers\compass_hmc5883l.c" />
+    <ClCompile Include="main\drivers\display_ug2864hsweg01.c" />
+    <ClCompile Include="main\drivers\dma.c" />
+    <ClCompile Include="main\drivers\exti.c" />
+    <ClCompile Include="main\drivers\flash_m25p16.c" />
+    <ClCompile Include="main\drivers\gpio_stm32f10x.c" />
+    <ClCompile Include="main\drivers\gpio_stm32f30x.c" />
+    <ClCompile Include="main\drivers\gyro_sync.c" />
+    <ClCompile Include="main\drivers\inverter.c" />
+    <ClCompile Include="main\drivers\io.c" />
+    <ClCompile Include="main\drivers\light_led_stm32f10x.c" />
+    <ClCompile Include="main\drivers\light_led_stm32f30x.c" />
+    <ClCompile Include="main\drivers\light_ws2811strip.c" />
+    <ClCompile Include="main\drivers\light_ws2811strip_stm32f10x.c" />
+    <ClCompile Include="main\drivers\light_ws2811strip_stm32f30x.c" />
+    <ClCompile Include="main\drivers\pwm_mapping.c" />
+    <ClCompile Include="main\drivers\pwm_output.c" />
+    <ClCompile Include="main\drivers\pwm_rx.c" />
+    <ClCompile Include="main\drivers\rcc.c" />
+    <ClCompile Include="main\drivers\sdcard.c" />
+    <ClCompile Include="main\drivers\sdcard_standard.c" />
+    <ClCompile Include="main\drivers\serial.c" />
+    <ClCompile Include="main\drivers\serial_softserial.c" />
+    <ClCompile Include="main\drivers\serial_uart.c" />
+    <ClCompile Include="main\drivers\serial_uart_stm32f10x.c" />
+    <ClCompile Include="main\drivers\serial_uart_stm32f30x.c" />
+    <ClCompile Include="main\drivers\serial_usb_vcp.c" />
+    <ClCompile Include="main\drivers\sonar_hcsr04.c" />
+    <ClCompile Include="main\drivers\sound_beeper.c" />
+    <ClCompile Include="main\drivers\sound_beeper_stm32f10x.c" />
+    <ClCompile Include="main\drivers\sound_beeper_stm32f30x.c" />
+    <ClCompile Include="main\drivers\system.c" />
+    <ClCompile Include="main\drivers\system_stm32f10x.c" />
+    <ClCompile Include="main\drivers\system_stm32f30x.c" />
+    <ClCompile Include="main\drivers\timer.c" />
+    <ClCompile Include="main\drivers\timer_stm32f10x.c" />
+    <ClCompile Include="main\drivers\timer_stm32f30x.c" />
+    <ClCompile Include="main\drivers\transponder_ir.c" />
+    <ClCompile Include="main\drivers\transponder_ir_stm32f30x.c" />
+    <ClCompile Include="main\drivers\usb_io.c" />
+    <ClCompile Include="main\drivers\video_max7456.c" />
+    <ClCompile Include="main\fc\boot.c" />
+    <ClCompile Include="main\fc\cleanflight_fc.c" />
+    <ClCompile Include="main\fc\config.c" />
+    <ClCompile Include="main\fc\fc_serial.c" />
+    <ClCompile Include="main\fc\fc_tasks.c" />
+    <ClCompile Include="main\fc\msp_server_fc.c" />
+    <ClCompile Include="main\fc\rate_profile.c" />
+    <ClCompile Include="main\fc\rc_adjustments.c" />
+    <ClCompile Include="main\fc\rc_controls.c" />
+    <ClCompile Include="main\fc\rc_curves.c" />
+    <ClCompile Include="main\fc\runtime_config.c" />
+    <ClCompile Include="main\flight\altitudehold.c" />
+    <ClCompile Include="main\flight\failsafe.c" />
+    <ClCompile Include="main\flight\gps_conversion.c" />
+    <ClCompile Include="main\flight\gtune.c" />
+    <ClCompile Include="main\flight\imu.c" />
+    <ClCompile Include="main\flight\mixer.c" />
+    <ClCompile Include="main\flight\navigation.c" />
+    <ClCompile Include="main\flight\pid.c" />
+    <ClCompile Include="main\flight\pid_luxfloat.c" />
+    <ClCompile Include="main\flight\pid_mw23.c" />
+    <ClCompile Include="main\flight\pid_mwrewrite.c" />
+    <ClCompile Include="main\flight\servos.c" />
+    <ClCompile Include="main\io\beeper.c" />
+    <ClCompile Include="main\io\display.c" />
+    <ClCompile Include="main\io\flashfs.c" />
+    <ClCompile Include="main\io\gimbal.c" />
+    <ClCompile Include="main\io\gps.c" />
+    <ClCompile Include="main\io\ledstrip.c" />
+    <ClCompile Include="main\io\motor_and_servo.c" />
+    <ClCompile Include="main\io\serial.c" />
+    <ClCompile Include="main\io\serial_4way.c" />
+    <ClCompile Include="main\io\serial_4way_avrootloader.c" />
+    <ClCompile Include="main\io\serial_4way_stk500v2.c" />
+    <ClCompile Include="main\io\serial_cli.c" />
+    <ClCompile Include="main\io\statusindicator.c" />
+    <ClCompile Include="main\io\transponder_ir.c" />
+    <ClCompile Include="main\io\asyncfatfs\asyncfatfs.c" />
+    <ClCompile Include="main\io\asyncfatfs\fat_standard.c" />
+    <ClCompile Include="main\msp\msp.c" />
+    <ClCompile Include="main\msp\msp_serial.c" />
+    <ClCompile Include="main\osd\boot.c" />
+    <ClCompile Include="main\osd\cleanflight_osd.c" />
+    <ClCompile Include="main\osd\config.c" />
+    <ClCompile Include="main\osd\fc_state.c" />
+    <ClCompile Include="main\osd\msp_client_osd.c" />
+    <ClCompile Include="main\osd\msp_server_osd.c" />
+    <ClCompile Include="main\osd\osd.c" />
+    <ClCompile Include="main\osd\osd_element.c" />
+    <ClCompile Include="main\osd\osd_element_render.c" />
+    <ClCompile Include="main\osd\osd_max7456.c" />
+    <ClCompile Include="main\osd\osd_screen.c" />
+    <ClCompile Include="main\osd\osd_serial.c" />
+    <ClCompile Include="main\osd\osd_tasks.c" />
+    <ClCompile Include="main\osd\fonts\font_max7456_12x18.c" />
+    <ClCompile Include="main\rx\ibus.c" />
+    <ClCompile Include="main\rx\msp.c" />
+    <ClCompile Include="main\rx\pwm.c" />
+    <ClCompile Include="main\rx\rx.c" />
+    <ClCompile Include="main\rx\sbus.c" />
+    <ClCompile Include="main\rx\spektrum.c" />
+    <ClCompile Include="main\rx\srxl.c" />
+    <ClCompile Include="main\rx\sumd.c" />
+    <ClCompile Include="main\rx\sumh.c" />
+    <ClCompile Include="main\rx\xbus.c" />
+    <ClCompile Include="main\scheduler\scheduler.c" />
+    <ClCompile Include="main\sensors\acceleration.c" />
+    <ClCompile Include="main\sensors\barometer.c" />
+    <ClCompile Include="main\sensors\battery.c" />
+    <ClCompile Include="main\sensors\boardalignment.c" />
+    <ClCompile Include="main\sensors\compass.c" />
+    <ClCompile Include="main\sensors\gyro.c" />
+    <ClCompile Include="main\sensors\initialisation.c" />
+    <ClCompile Include="main\sensors\sensors.c" />
+    <ClCompile Include="main\sensors\sonar.c" />
+    <ClCompile Include="main\target\system_stm32f30x.c" />
+    <ClCompile Include="main\target\ALIENFLIGHTF3\hardware_revision.c" />
+    <ClCompile Include="main\target\CJMCU\hardware_revision.c" />
+    <ClCompile Include="main\target\NAZE\hardware_revision.c" />
+    <ClCompile Include="main\telemetry\frsky.c" />
+    <ClCompile Include="main\telemetry\hott.c" />
+    <ClCompile Include="main\telemetry\ltm.c" />
+    <ClCompile Include="main\telemetry\mavlink.c" />
+    <ClCompile Include="main\telemetry\smartport.c" />
+    <ClCompile Include="main\telemetry\telemetry.c" />
+    <ClCompile Include="main\vcp\hw_config.c" />
+    <ClCompile Include="main\vcp\stm32_it.c" />
+    <ClCompile Include="main\vcp\usb_desc.c" />
+    <ClCompile Include="main\vcp\usb_endp.c" />
+    <ClCompile Include="main\vcp\usb_istr.c" />
+    <ClCompile Include="main\vcp\usb_prop.c" />
+    <ClCompile Include="main\vcp\usb_pwr.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f415xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f417xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f427xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f437xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f439xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\arm_const_structs.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cm0.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cm0plus.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cm3.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cm4.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cm4_simd.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_sc000.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include\core_sc300.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS\cmsis_os.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_conf_template.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cryp.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cryp_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dac.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dcmi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_eth.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hash.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hash_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_irda.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_nand.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_nor.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pccard.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sai.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sd.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sram.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fsmc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h" />
+    <ClInclude Include="stm32f4xx_hal_conf.h" />
+    <ClInclude Include="main\platform.h" />
+    <ClInclude Include="main\blackbox\blackbox.h" />
+    <ClInclude Include="main\blackbox\blackbox_fielddefs.h" />
+    <ClInclude Include="main\blackbox\blackbox_io.h" />
+    <ClInclude Include="main\build\atomic.h" />
+    <ClInclude Include="main\build\build_config.h" />
+    <ClInclude Include="main\build\debug.h" />
+    <ClInclude Include="main\build\version.h" />
+    <ClInclude Include="main\common\axis.h" />
+    <ClInclude Include="main\common\color.h" />
+    <ClInclude Include="main\common\colorconversion.h" />
+    <ClInclude Include="main\common\crc.h" />
+    <ClInclude Include="main\common\encoding.h" />
+    <ClInclude Include="main\common\filter.h" />
+    <ClInclude Include="main\common\maths.h" />
+    <ClInclude Include="main\common\printf.h" />
+    <ClInclude Include="main\common\streambuf.h" />
+    <ClInclude Include="main\common\typeconversion.h" />
+    <ClInclude Include="main\common\utils.h" />
+    <ClInclude Include="main\config\config_eeprom.h" />
+    <ClInclude Include="main\config\config_reset.h" />
+    <ClInclude Include="main\config\config_streamer.h" />
+    <ClInclude Include="main\config\config_system.h" />
+    <ClInclude Include="main\config\config_unittest.h" />
+    <ClInclude Include="main\config\feature.h" />
+    <ClInclude Include="main\config\parameter_group.h" />
+    <ClInclude Include="main\config\parameter_group_ids.h" />
+    <ClInclude Include="main\config\profile.h" />
+    <ClInclude Include="main\drivers\accgyro.h" />
+    <ClInclude Include="main\drivers\accgyro_adxl345.h" />
+    <ClInclude Include="main\drivers\accgyro_bma280.h" />
+    <ClInclude Include="main\drivers\accgyro_l3g4200d.h" />
+    <ClInclude Include="main\drivers\accgyro_l3gd20.h" />
+    <ClInclude Include="main\drivers\accgyro_lsm303dlhc.h" />
+    <ClInclude Include="main\drivers\accgyro_mma845x.h" />
+    <ClInclude Include="main\drivers\accgyro_mpu.h" />
+    <ClInclude Include="main\drivers\accgyro_mpu3050.h" />
+    <ClInclude Include="main\drivers\accgyro_mpu6050.h" />
+    <ClInclude Include="main\drivers\accgyro_mpu6500.h" />
+    <ClInclude Include="main\drivers\accgyro_spi_mpu6000.h" />
+    <ClInclude Include="main\drivers\accgyro_spi_mpu6500.h" />
+    <ClInclude Include="main\drivers\adc.h" />
+    <ClInclude Include="main\drivers\adc_impl.h" />
+    <ClInclude Include="main\drivers\barometer.h" />
+    <ClInclude Include="main\drivers\barometer_bmp085.h" />
+    <ClInclude Include="main\drivers\barometer_bmp280.h" />
+    <ClInclude Include="main\drivers\barometer_ms5611.h" />
+    <ClInclude Include="main\drivers\buf_writer.h" />
+    <ClInclude Include="main\drivers\bus_i2c.h" />
+    <ClInclude Include="main\drivers\bus_spi.h" />
+    <ClInclude Include="main\drivers\compass.h" />
+    <ClInclude Include="main\drivers\compass_ak8963.h" />
+    <ClInclude Include="main\drivers\compass_ak8975.h" />
+    <ClInclude Include="main\drivers\compass_hmc5883l.h" />
+    <ClInclude Include="main\drivers\display_ug2864hsweg01.h" />
+    <ClInclude Include="main\drivers\dma.h" />
+    <ClInclude Include="main\drivers\exti.h" />
+    <ClInclude Include="main\drivers\flash.h" />
+    <ClInclude Include="main\drivers\flash_m25p16.h" />
+    <ClInclude Include="main\drivers\gpio.h" />
+    <ClInclude Include="main\drivers\gyro_sync.h" />
+    <ClInclude Include="main\drivers\inverter.h" />
+    <ClInclude Include="main\drivers\io.h" />
+    <ClInclude Include="main\drivers\io_def.h" />
+    <ClInclude Include="main\drivers\io_def_generated.h" />
+    <ClInclude Include="main\drivers\io_impl.h" />
+    <ClInclude Include="main\drivers\light_led.h" />
+    <ClInclude Include="main\drivers\light_ws2811strip.h" />
+    <ClInclude Include="main\drivers\nvic.h" />
+    <ClInclude Include="main\drivers\pwm_mapping.h" />
+    <ClInclude Include="main\drivers\pwm_output.h" />
+    <ClInclude Include="main\drivers\pwm_rx.h" />
+    <ClInclude Include="main\drivers\rcc.h" />
+    <ClInclude Include="main\drivers\resource.h" />
+    <ClInclude Include="main\drivers\sdcard.h" />
+    <ClInclude Include="main\drivers\sdcard_standard.h" />
+    <ClInclude Include="main\drivers\sensor.h" />
+    <ClInclude Include="main\drivers\serial.h" />
+    <ClInclude Include="main\drivers\serial_softserial.h" />
+    <ClInclude Include="main\drivers\serial_uart.h" />
+    <ClInclude Include="main\drivers\serial_uart_impl.h" />
+    <ClInclude Include="main\drivers\serial_uart_stm32f10x.h" />
+    <ClInclude Include="main\drivers\serial_uart_stm32f30x.h" />
+    <ClInclude Include="main\drivers\serial_usb_vcp.h" />
+    <ClInclude Include="main\drivers\sonar_hcsr04.h" />
+    <ClInclude Include="main\drivers\sound_beeper.h" />
+    <ClInclude Include="main\drivers\system.h" />
+    <ClInclude Include="main\drivers\timer.h" />
+    <ClInclude Include="main\drivers\timer_impl.h" />
+    <ClInclude Include="main\drivers\timer_stm32f10x.h" />
+    <ClInclude Include="main\drivers\timer_stm32f30x.h" />
+    <ClInclude Include="main\drivers\transponder_ir.h" />
+    <ClInclude Include="main\drivers\usb_io.h" />
+    <ClInclude Include="main\drivers\video.h" />
+    <ClInclude Include="main\drivers\video_max7456.h" />
+    <ClInclude Include="main\drivers\video_textscreen.h" />
+    <ClInclude Include="main\fc\cleanflight_fc.h" />
+    <ClInclude Include="main\fc\config.h" />
+    <ClInclude Include="main\fc\fc_serial.h" />
+    <ClInclude Include="main\fc\fc_tasks.h" />
+    <ClInclude Include="main\fc\msp_server_fc.h" />
+    <ClInclude Include="main\fc\rate_profile.h" />
+    <ClInclude Include="main\fc\rc_adjustments.h" />
+    <ClInclude Include="main\fc\rc_controls.h" />
+    <ClInclude Include="main\fc\rc_curves.h" />
+    <ClInclude Include="main\fc\runtime_config.h" />
+    <ClInclude Include="main\flight\altitudehold.h" />
+    <ClInclude Include="main\flight\failsafe.h" />
+    <ClInclude Include="main\flight\gps_conversion.h" />
+    <ClInclude Include="main\flight\gtune.h" />
+    <ClInclude Include="main\flight\imu.h" />
+    <ClInclude Include="main\flight\mixer.h" />
+    <ClInclude Include="main\flight\navigation.h" />
+    <ClInclude Include="main\flight\pid.h" />
+    <ClInclude Include="main\flight\servos.h" />
+    <ClInclude Include="main\io\beeper.h" />
+    <ClInclude Include="main\io\display.h" />
+    <ClInclude Include="main\io\flashfs.h" />
+    <ClInclude Include="main\io\gimbal.h" />
+    <ClInclude Include="main\io\gps.h" />
+    <ClInclude Include="main\io\ledstrip.h" />
+    <ClInclude Include="main\io\motor_and_servo.h" />
+    <ClInclude Include="main\io\serial.h" />
+    <ClInclude Include="main\io\serial_4way.h" />
+    <ClInclude Include="main\io\serial_4way_avrootloader.h" />
+    <ClInclude Include="main\io\serial_4way_impl.h" />
+    <ClInclude Include="main\io\serial_4way_stk500v2.h" />
+    <ClInclude Include="main\io\serial_cli.h" />
+    <ClInclude Include="main\io\statusindicator.h" />
+    <ClInclude Include="main\io\transponder_ir.h" />
+    <ClInclude Include="main\io\asyncfatfs\asyncfatfs.h" />
+    <ClInclude Include="main\io\asyncfatfs\fat_standard.h" />
+    <ClInclude Include="main\mavlink\checksum.h" />
+    <ClInclude Include="main\mavlink\mavlink_conversions.h" />
+    <ClInclude Include="main\mavlink\mavlink_helpers.h" />
+    <ClInclude Include="main\mavlink\mavlink_types.h" />
+    <ClInclude Include="main\mavlink\protocol.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\ardupilotmega.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_ahrs.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_ahrs2.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_ahrs3.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_airspeed_autocal.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_ap_adc.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_autopilot_version_request.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_battery2.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_camera_feedback.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_camera_status.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_compassmot_status.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_data16.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_data32.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_data64.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_data96.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_digicam_configure.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_digicam_control.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_ekf_status_report.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_fence_fetch_point.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_fence_point.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_fence_status.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_axis_calibration_progress.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_control.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_erase_firmware_and_config.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_factory_parameters_loaded.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_home_offset_calibration_result.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_perform_factory_tests.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_report.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_report_factory_tests_progress.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_reset.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_set_factory_parameters.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gimbal_set_home_offsets.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gopro_command.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gopro_power_off.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gopro_power_on.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_gopro_response.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_hwstatus.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_led_control.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_limits_status.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_mag_cal_progress.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_mag_cal_report.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_meminfo.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_mount_configure.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_mount_control.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_mount_status.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_radio.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_rally_fetch_point.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_rally_point.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_rangefinder.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_sensor_offsets.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_set_mag_offsets.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_simstate.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\mavlink_msg_wind.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\testsuite.h" />
+    <ClInclude Include="main\mavlink\ardupilotmega\version.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\ASLUAV.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_aslctrl_data.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_aslctrl_debug.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_asluav_status.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_asl_obctrl.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_ekf_ext.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_sens_atmos.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_sens_batmon.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_sens_mppt.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\mavlink_msg_sens_power.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\testsuite.h" />
+    <ClInclude Include="main\mavlink\ASLUAV\version.h" />
+    <ClInclude Include="main\mavlink\autoquad\autoquad.h" />
+    <ClInclude Include="main\mavlink\autoquad\mavlink.h" />
+    <ClInclude Include="main\mavlink\autoquad\mavlink_msg_aq_esc_telemetry.h" />
+    <ClInclude Include="main\mavlink\autoquad\mavlink_msg_aq_telemetry_f.h" />
+    <ClInclude Include="main\mavlink\autoquad\testsuite.h" />
+    <ClInclude Include="main\mavlink\autoquad\version.h" />
+    <ClInclude Include="main\mavlink\common\common.h" />
+    <ClInclude Include="main\mavlink\common\mavlink.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_actuator_control_target.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_attitude.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_attitude_quaternion.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_attitude_quaternion_cov.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_attitude_target.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_att_pos_mocap.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_auth_key.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_autopilot_version.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_battery_status.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_camera_trigger.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_change_operator_control.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_change_operator_control_ack.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_command_ack.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_command_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_command_long.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_data_stream.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_data_transmission_handshake.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_debug.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_debug_vect.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_distance_sensor.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_encapsulated_data.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_file_transfer_protocol.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_global_position_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_global_position_int_cov.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_global_vision_position_estimate.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps2_raw.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps2_rtk.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps_global_origin.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps_inject_data.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps_raw_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps_rtk.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_gps_status.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_heartbeat.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_highres_imu.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_controls.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_gps.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_optical_flow.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_rc_inputs_raw.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_sensor.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_state.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_hil_state_quaternion.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_local_position_ned.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_local_position_ned_cov.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_local_position_ned_system_global_offset.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_data.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_entry.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_erase.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_request_data.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_request_end.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_log_request_list.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_manual_control.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_manual_setpoint.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_memory_vect.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_ack.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_clear_all.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_count.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_current.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_item.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_item_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_item_reached.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_request.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_request_list.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_request_partial_list.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_set_current.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_mission_write_partial_list.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_named_value_float.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_named_value_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_nav_controller_output.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_optical_flow.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_optical_flow_rad.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_param_map_rc.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_param_request_list.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_param_request_read.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_param_set.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_param_value.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_ping.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_position_target_global_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_position_target_local_ned.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_power_status.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_radio_status.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_raw_imu.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_raw_pressure.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_rc_channels.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_rc_channels_override.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_rc_channels_raw.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_rc_channels_scaled.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_request_data_stream.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_safety_allowed_area.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_safety_set_allowed_area.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_scaled_imu.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_scaled_imu2.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_scaled_imu3.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_scaled_pressure.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_scaled_pressure2.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_serial_control.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_servo_output_raw.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_actuator_control_target.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_attitude_target.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_gps_global_origin.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_mode.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_position_target_global_int.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_set_position_target_local_ned.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_sim_state.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_statustext.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_system_time.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_sys_status.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_terrain_check.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_terrain_data.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_terrain_report.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_terrain_request.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_timesync.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_v2_extension.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_vfr_hud.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_vicon_position_estimate.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_vision_position_estimate.h" />
+    <ClInclude Include="main\mavlink\common\mavlink_msg_vision_speed_estimate.h" />
+    <ClInclude Include="main\mavlink\common\testsuite.h" />
+    <ClInclude Include="main\mavlink\common\version.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\matrixpilot.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_airspeeds.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_altitudes.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_buffer_function.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_buffer_function_ack.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_command.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_command_ack.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_directory.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_directory_ack.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_read_req.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_flexifunction_set.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f13.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f14.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f15.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f16.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f2_a.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f2_b.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f4.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f5.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f6.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f7.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\mavlink_msg_serial_udb_extra_f8.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\testsuite.h" />
+    <ClInclude Include="main\mavlink\matrixpilot\version.h" />
+    <ClInclude Include="main\mavlink\minimal\mavlink.h" />
+    <ClInclude Include="main\mavlink\minimal\mavlink_msg_heartbeat.h" />
+    <ClInclude Include="main\mavlink\minimal\minimal.h" />
+    <ClInclude Include="main\mavlink\minimal\testsuite.h" />
+    <ClInclude Include="main\mavlink\minimal\version.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_attitude_control.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_brief_feature.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_detection_stats.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_image_available.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_image_triggered.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_image_trigger_control.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_marker.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_onboard_health.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_pattern_detected.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_point_of_interest.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_point_of_interest_connection.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_position_control_setpoint.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_raw_aux.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_set_cam_shutter.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_set_position_control_offset.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_watchdog_command.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_watchdog_heartbeat.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_watchdog_process_info.h" />
+    <ClInclude Include="main\mavlink\pixhawk\mavlink_msg_watchdog_process_status.h" />
+    <ClInclude Include="main\mavlink\pixhawk\pixhawk.h" />
+    <ClInclude Include="main\mavlink\pixhawk\testsuite.h" />
+    <ClInclude Include="main\mavlink\pixhawk\version.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_boot.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_control_surface.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_cpu_load.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_ctrl_srfc_pt.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_data_log.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_diagnostic.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_gps_date_time.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_isr_location.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_mid_lvl_cmds.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_novatel_diag.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_ptz_status.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_sensor_bias.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_sensor_diag.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_slugs_camera_order.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_slugs_configuration_camera.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_slugs_mobile_location.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_slugs_navigation.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_status_gps.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_uav_status.h" />
+    <ClInclude Include="main\mavlink\slugs\mavlink_msg_volt_sensor.h" />
+    <ClInclude Include="main\mavlink\slugs\slugs.h" />
+    <ClInclude Include="main\mavlink\slugs\testsuite.h" />
+    <ClInclude Include="main\mavlink\slugs\version.h" />
+    <ClInclude Include="main\mavlink\test\mavlink.h" />
+    <ClInclude Include="main\mavlink\test\mavlink_msg_test_types.h" />
+    <ClInclude Include="main\mavlink\test\test.h" />
+    <ClInclude Include="main\mavlink\test\testsuite.h" />
+    <ClInclude Include="main\mavlink\test\version.h" />
+    <ClInclude Include="main\mavlink\ualberta\mavlink.h" />
+    <ClInclude Include="main\mavlink\ualberta\mavlink_msg_nav_filter_bias.h" />
+    <ClInclude Include="main\mavlink\ualberta\mavlink_msg_radio_calibration.h" />
+    <ClInclude Include="main\mavlink\ualberta\mavlink_msg_ualberta_sys_status.h" />
+    <ClInclude Include="main\mavlink\ualberta\testsuite.h" />
+    <ClInclude Include="main\mavlink\ualberta\ualberta.h" />
+    <ClInclude Include="main\mavlink\ualberta\version.h" />
+    <ClInclude Include="main\msp\msp.h" />
+    <ClInclude Include="main\msp\msp_protocol.h" />
+    <ClInclude Include="main\msp\msp_serial.h" />
+    <ClInclude Include="main\osd\cleanflight_osd.h" />
+    <ClInclude Include="main\osd\config.h" />
+    <ClInclude Include="main\osd\fc_state.h" />
+    <ClInclude Include="main\osd\msp_client_osd.h" />
+    <ClInclude Include="main\osd\msp_server_osd.h" />
+    <ClInclude Include="main\osd\osd.h" />
+    <ClInclude Include="main\osd\osd_element.h" />
+    <ClInclude Include="main\osd\osd_element_render.h" />
+    <ClInclude Include="main\osd\osd_screen.h" />
+    <ClInclude Include="main\osd\osd_serial.h" />
+    <ClInclude Include="main\osd\osd_tasks.h" />
+    <ClInclude Include="main\osd\fonts\font_max7456_12x18.h" />
+    <ClInclude Include="main\rx\ibus.h" />
+    <ClInclude Include="main\rx\msp.h" />
+    <ClInclude Include="main\rx\pwm.h" />
+    <ClInclude Include="main\rx\rx.h" />
+    <ClInclude Include="main\rx\sbus.h" />
+    <ClInclude Include="main\rx\spektrum.h" />
+    <ClInclude Include="main\rx\srxl.h" />
+    <ClInclude Include="main\rx\sumd.h" />
+    <ClInclude Include="main\rx\sumh.h" />
+    <ClInclude Include="main\rx\xbus.h" />
+    <ClInclude Include="main\scheduler\scheduler.h" />
+    <ClInclude Include="main\sensors\acceleration.h" />
+    <ClInclude Include="main\sensors\barometer.h" />
+    <ClInclude Include="main\sensors\battery.h" />
+    <ClInclude Include="main\sensors\boardalignment.h" />
+    <ClInclude Include="main\sensors\compass.h" />
+    <ClInclude Include="main\sensors\gyro.h" />
+    <ClInclude Include="main\sensors\initialisation.h" />
+    <ClInclude Include="main\sensors\sensors.h" />
+    <ClInclude Include="main\sensors\sonar.h" />
+    <ClInclude Include="main\target\system_stm32f30x.h" />
+    <ClInclude Include="main\target\ALIENFLIGHTF3\hardware_revision.h" />
+    <ClInclude Include="main\target\ALIENFLIGHTF3\target.h" />
+    <ClInclude Include="main\target\CC3D\target.h" />
+    <ClInclude Include="main\target\CHEBUZZF3\target.h" />
+    <ClInclude Include="main\target\CJMCU\hardware_revision.h" />
+    <ClInclude Include="main\target\CJMCU\target.h" />
+    <ClInclude Include="main\target\COLIBRI_RACE\target.h" />
+    <ClInclude Include="main\target\EUSTM32F103RC\target.h" />
+    <ClInclude Include="main\target\IRCFUSIONF3\target.h" />
+    <ClInclude Include="main\target\LUX_RACE\target.h" />
+    <ClInclude Include="main\target\MOTOLAB\target.h" />
+    <ClInclude Include="main\target\NAZE\hardware_revision.h" />
+    <ClInclude Include="main\target\NAZE\target.h" />
+    <ClInclude Include="main\target\OLIMEXINO\target.h" />
+    <ClInclude Include="main\target\PORT103R\target.h" />
+    <ClInclude Include="main\target\RCEXPLORERF3\target.h" />
+    <ClInclude Include="main\target\RMDO\target.h" />
+    <ClInclude Include="main\target\SPARKY\target.h" />
+    <ClInclude Include="main\target\SPRACINGF1OSD\target.h" />
+    <ClInclude Include="main\target\SPRACINGF3\target.h" />
+    <ClInclude Include="main\target\SPRACINGF3EVO\target.h" />
+    <ClInclude Include="main\target\SPRACINGF3MINI\target.h" />
+    <ClInclude Include="main\target\SPRACINGF3OSD\target.h" />
+    <ClInclude Include="main\target\STM32F3DISCOVERY\target.h" />
+    <ClInclude Include="main\telemetry\frsky.h" />
+    <ClInclude Include="main\telemetry\hott.h" />
+    <ClInclude Include="main\telemetry\ltm.h" />
+    <ClInclude Include="main\telemetry\mavlink.h" />
+    <ClInclude Include="main\telemetry\smartport.h" />
+    <ClInclude Include="main\telemetry\telemetry.h" />
+    <ClInclude Include="main\vcp\hw_config.h" />
+    <ClInclude Include="main\vcp\platform_config.h" />
+    <ClInclude Include="main\vcp\stm32_it.h" />
+    <ClInclude Include="main\vcp\usb_conf.h" />
+    <ClInclude Include="main\vcp\usb_desc.h" />
+    <ClInclude Include="main\vcp\usb_istr.h" />
+    <ClInclude Include="main\vcp\usb_prop.h" />
+    <ClInclude Include="main\vcp\usb_pwr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="stm32.mak" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
