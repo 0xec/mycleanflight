@@ -23,7 +23,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := $(BSP_ROOT)/STM32F4xxxx-HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c $(BSP_ROOT)/STM32F4xxxx-HAL/startup_stm32f4xx.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c LEDBlink.cpp main/blackbox/blackbox.c main/blackbox/blackbox_io.c main/build/build_config.c main/build/debug.c main/build/version.c main/common/colorconversion.c main/common/crc.c main/common/encoding.c main/common/filter.c main/common/maths.c main/common/printf.c main/common/streambuf.c main/common/typeconversion.c main/config/config_eeprom.c main/config/config_streamer.c main/config/feature.c main/config/parameter_group.c main/config/profile.c main/drivers/accgyro_adxl345.c main/drivers/accgyro_bma280.c main/drivers/accgyro_l3g4200d.c main/drivers/accgyro_l3gd20.c main/drivers/accgyro_lsm303dlhc.c main/drivers/accgyro_mma845x.c main/drivers/accgyro_mpu.c main/drivers/accgyro_mpu3050.c main/drivers/accgyro_mpu6050.c main/drivers/accgyro_mpu6500.c main/drivers/accgyro_spi_mpu6000.c main/drivers/accgyro_spi_mpu6500.c main/drivers/adc.c main/drivers/adc_stm32f10x.c main/drivers/adc_stm32f30x.c main/drivers/barometer_bmp085.c main/drivers/barometer_bmp280.c main/drivers/barometer_ms5611.c main/drivers/buf_writer.c main/drivers/bus_i2c_soft.c main/drivers/bus_i2c_stm32f10x.c main/drivers/bus_i2c_stm32f30x.c main/drivers/bus_spi.c main/drivers/compass_ak8963.c main/drivers/compass_ak8975.c main/drivers/compass_hmc5883l.c main/drivers/display_ug2864hsweg01.c main/drivers/dma.c main/drivers/exti.c main/drivers/flash_m25p16.c main/drivers/gpio_stm32f10x.c main/drivers/gpio_stm32f30x.c main/drivers/gyro_sync.c main/drivers/inverter.c main/drivers/io.c main/drivers/light_led_stm32f10x.c main/drivers/light_led_stm32f30x.c main/drivers/light_ws2811strip.c main/drivers/light_ws2811strip_stm32f10x.c main/drivers/light_ws2811strip_stm32f30x.c main/drivers/pwm_mapping.c main/drivers/pwm_output.c main/drivers/pwm_rx.c main/drivers/rcc.c main/drivers/sdcard.c main/drivers/sdcard_standard.c main/drivers/serial.c main/drivers/serial_softserial.c main/drivers/serial_uart.c main/drivers/serial_uart_stm32f10x.c main/drivers/serial_uart_stm32f30x.c main/drivers/serial_usb_vcp.c main/drivers/sonar_hcsr04.c main/drivers/sound_beeper.c main/drivers/sound_beeper_stm32f10x.c main/drivers/sound_beeper_stm32f30x.c main/drivers/system.c main/drivers/system_stm32f10x.c main/drivers/system_stm32f30x.c main/drivers/timer.c main/drivers/timer_stm32f10x.c main/drivers/timer_stm32f30x.c main/drivers/transponder_ir.c main/drivers/transponder_ir_stm32f30x.c main/drivers/usb_io.c main/drivers/video_max7456.c main/fc/boot.c main/fc/cleanflight_fc.c main/fc/config.c main/fc/fc_serial.c main/fc/fc_tasks.c main/fc/msp_server_fc.c main/fc/rate_profile.c main/fc/rc_adjustments.c main/fc/rc_controls.c main/fc/rc_curves.c main/fc/runtime_config.c main/flight/altitudehold.c main/flight/failsafe.c main/flight/gps_conversion.c main/flight/gtune.c main/flight/imu.c main/flight/mixer.c main/flight/navigation.c main/flight/pid.c main/flight/pid_luxfloat.c main/flight/pid_mw23.c main/flight/pid_mwrewrite.c main/flight/servos.c main/io/beeper.c main/io/display.c main/io/flashfs.c main/io/gimbal.c main/io/gps.c main/io/ledstrip.c main/io/motor_and_servo.c main/io/serial.c main/io/serial_4way.c main/io/serial_4way_avrootloader.c main/io/serial_4way_stk500v2.c main/io/serial_cli.c main/io/statusindicator.c main/io/transponder_ir.c main/io/asyncfatfs/asyncfatfs.c main/io/asyncfatfs/fat_standard.c main/msp/msp.c main/msp/msp_serial.c main/osd/boot.c main/osd/cleanflight_osd.c main/osd/config.c main/osd/fc_state.c main/osd/msp_client_osd.c main/osd/msp_server_osd.c main/osd/osd.c main/osd/osd_element.c main/osd/osd_element_render.c main/osd/osd_max7456.c main/osd/osd_screen.c main/osd/osd_serial.c main/osd/osd_tasks.c main/osd/fonts/font_max7456_12x18.c main/rx/ibus.c main/rx/msp.c main/rx/pwm.c main/rx/rx.c main/rx/sbus.c main/rx/spektrum.c main/rx/srxl.c main/rx/sumd.c main/rx/sumh.c main/rx/xbus.c main/scheduler/scheduler.c main/sensors/acceleration.c main/sensors/barometer.c main/sensors/battery.c main/sensors/boardalignment.c main/sensors/compass.c main/sensors/gyro.c main/sensors/initialisation.c main/sensors/sensors.c main/sensors/sonar.c main/target/system_stm32f30x.c main/target/ALIENFLIGHTF3/hardware_revision.c main/target/CJMCU/hardware_revision.c main/target/NAZE/hardware_revision.c main/telemetry/frsky.c main/telemetry/hott.c main/telemetry/ltm.c main/telemetry/mavlink.c main/telemetry/smartport.c main/telemetry/telemetry.c main/vcp/hw_config.c main/vcp/stm32_it.c main/vcp/usb_desc.c main/vcp/usb_endp.c main/vcp/usb_istr.c main/vcp/usb_prop.c main/vcp/usb_pwr.c
+SOURCEFILES := $(BSP_ROOT)/STM32F4xxxx-HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c $(BSP_ROOT)/STM32F4xxxx-HAL/startup_stm32f4xx.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c $(BSP_ROOT)/STM32F4xxxx-HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c LEDBlink.cpp main/blackbox/blackbox.c main/blackbox/blackbox_io.c main/build/build_config.c main/build/debug.c main/build/version.c main/common/colorconversion.c main/common/crc.c main/common/encoding.c main/common/filter.c main/common/maths.c main/common/printf.c main/common/streambuf.c main/common/typeconversion.c main/config/config_eeprom.c main/config/config_streamer.c main/config/feature.c main/config/parameter_group.c main/config/profile.c main/drivers/accgyro_adxl345.c main/drivers/accgyro_l3g4200d.c main/drivers/adc.c main/drivers/barometer_ms5611.c main/drivers/buf_writer.c main/drivers/bus_i2c_soft.c main/drivers/bus_spi.c main/drivers/compass_hmc5883l.c main/drivers/dma.c main/drivers/exti.c main/drivers/flash_m25p16.c main/drivers/gyro_sync.c main/drivers/inverter.c main/drivers/io.c main/drivers/light_ws2811strip.c main/drivers/pwm_mapping.c main/drivers/pwm_output.c main/drivers/pwm_rx.c main/drivers/rcc.c main/drivers/sdcard.c main/drivers/sdcard_standard.c main/drivers/serial.c main/drivers/serial_softserial.c main/drivers/serial_uart.c main/drivers/serial_usb_vcp.c main/drivers/sonar_hcsr04.c main/drivers/sound_beeper.c main/drivers/system.c main/drivers/timer.c main/drivers/transponder_ir.c main/drivers/transponder_ir_stm32f30x.c main/drivers/usb_io.c main/drivers/video_max7456.c main/fc/boot.c main/fc/cleanflight_fc.c main/fc/config.c main/fc/fc_serial.c main/fc/fc_tasks.c main/fc/msp_server_fc.c main/fc/rate_profile.c main/fc/rc_adjustments.c main/fc/rc_controls.c main/fc/rc_curves.c main/fc/runtime_config.c main/flight/altitudehold.c main/flight/failsafe.c main/flight/gps_conversion.c main/flight/gtune.c main/flight/imu.c main/flight/mixer.c main/flight/navigation.c main/flight/pid.c main/flight/pid_luxfloat.c main/flight/pid_mw23.c main/flight/pid_mwrewrite.c main/flight/servos.c main/io/beeper.c main/io/display.c main/io/flashfs.c main/io/gimbal.c main/io/gps.c main/io/ledstrip.c main/io/motor_and_servo.c main/io/serial.c main/io/serial_4way.c main/io/serial_4way_avrootloader.c main/io/serial_4way_stk500v2.c main/io/serial_cli.c main/io/statusindicator.c main/io/transponder_ir.c main/io/asyncfatfs/asyncfatfs.c main/io/asyncfatfs/fat_standard.c main/msp/msp.c main/msp/msp_serial.c main/rx/ibus.c main/rx/msp.c main/rx/pwm.c main/rx/rx.c main/rx/sbus.c main/rx/spektrum.c main/rx/srxl.c main/rx/sumd.c main/rx/sumh.c main/rx/xbus.c main/scheduler/scheduler.c main/sensors/acceleration.c main/sensors/barometer.c main/sensors/battery.c main/sensors/boardalignment.c main/sensors/compass.c main/sensors/gyro.c main/sensors/initialisation.c main/sensors/sensors.c main/sensors/sonar.c main/target/system_stm32f30x.c main/target/ALIENFLIGHTF3/hardware_revision.c main/target/CJMCU/hardware_revision.c main/target/NAZE/hardware_revision.c main/telemetry/frsky.c main/telemetry/hott.c main/telemetry/ltm.c main/telemetry/mavlink.c main/telemetry/smartport.c main/telemetry/telemetry.c main/vcp/hw_config.c main/vcp/stm32_it.c main/vcp/usb_desc.c main/vcp/usb_endp.c main/vcp/usb_istr.c main/vcp/usb_prop.c main/vcp/usb_pwr.c
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 
@@ -477,67 +477,11 @@ $(BINARYDIR)/accgyro_adxl345.o : main/drivers/accgyro_adxl345.c $(all_make_files
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/accgyro_bma280.o : main/drivers/accgyro_bma280.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/accgyro_l3g4200d.o : main/drivers/accgyro_l3g4200d.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/accgyro_l3gd20.o : main/drivers/accgyro_l3gd20.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_lsm303dlhc.o : main/drivers/accgyro_lsm303dlhc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_mma845x.o : main/drivers/accgyro_mma845x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_mpu.o : main/drivers/accgyro_mpu.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_mpu3050.o : main/drivers/accgyro_mpu3050.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_mpu6050.o : main/drivers/accgyro_mpu6050.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_mpu6500.o : main/drivers/accgyro_mpu6500.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_spi_mpu6000.o : main/drivers/accgyro_spi_mpu6000.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/accgyro_spi_mpu6500.o : main/drivers/accgyro_spi_mpu6500.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/adc.o : main/drivers/adc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/adc_stm32f10x.o : main/drivers/adc_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/adc_stm32f30x.o : main/drivers/adc_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/barometer_bmp085.o : main/drivers/barometer_bmp085.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/barometer_bmp280.o : main/drivers/barometer_bmp280.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -553,31 +497,11 @@ $(BINARYDIR)/bus_i2c_soft.o : main/drivers/bus_i2c_soft.c $(all_make_files) |$(B
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/bus_i2c_stm32f10x.o : main/drivers/bus_i2c_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/bus_i2c_stm32f30x.o : main/drivers/bus_i2c_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/bus_spi.o : main/drivers/bus_spi.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/compass_ak8963.o : main/drivers/compass_ak8963.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/compass_ak8975.o : main/drivers/compass_ak8975.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/compass_hmc5883l.o : main/drivers/compass_hmc5883l.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/display_ug2864hsweg01.o : main/drivers/display_ug2864hsweg01.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -593,14 +517,6 @@ $(BINARYDIR)/flash_m25p16.o : main/drivers/flash_m25p16.c $(all_make_files) |$(B
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/gpio_stm32f10x.o : main/drivers/gpio_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/gpio_stm32f30x.o : main/drivers/gpio_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/gyro_sync.o : main/drivers/gyro_sync.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
@@ -613,23 +529,7 @@ $(BINARYDIR)/io.o : main/drivers/io.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/light_led_stm32f10x.o : main/drivers/light_led_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/light_led_stm32f30x.o : main/drivers/light_led_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/light_ws2811strip.o : main/drivers/light_ws2811strip.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/light_ws2811strip_stm32f10x.o : main/drivers/light_ws2811strip_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/light_ws2811strip_stm32f30x.o : main/drivers/light_ws2811strip_stm32f30x.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -669,14 +569,6 @@ $(BINARYDIR)/serial_uart.o : main/drivers/serial_uart.c $(all_make_files) |$(BIN
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/serial_uart_stm32f10x.o : main/drivers/serial_uart_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/serial_uart_stm32f30x.o : main/drivers/serial_uart_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/serial_usb_vcp.o : main/drivers/serial_usb_vcp.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
@@ -689,35 +581,11 @@ $(BINARYDIR)/sound_beeper.o : main/drivers/sound_beeper.c $(all_make_files) |$(B
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/sound_beeper_stm32f10x.o : main/drivers/sound_beeper_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/sound_beeper_stm32f30x.o : main/drivers/sound_beeper_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/system.o : main/drivers/system.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/system_stm32f10x.o : main/drivers/system_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/system_stm32f30x.o : main/drivers/system_stm32f30x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/timer.o : main/drivers/timer.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/timer_stm32f10x.o : main/drivers/timer_stm32f10x.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/timer_stm32f30x.o : main/drivers/timer_stm32f30x.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -898,62 +766,6 @@ $(BINARYDIR)/msp.o : main/msp/msp.c $(all_make_files) |$(BINARYDIR)
 
 
 $(BINARYDIR)/msp_serial.o : main/msp/msp_serial.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/boot.o : main/osd/boot.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/cleanflight_osd.o : main/osd/cleanflight_osd.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/config.o : main/osd/config.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/fc_state.o : main/osd/fc_state.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/msp_client_osd.o : main/osd/msp_client_osd.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/msp_server_osd.o : main/osd/msp_server_osd.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd.o : main/osd/osd.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_element.o : main/osd/osd_element.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_element_render.o : main/osd/osd_element_render.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_max7456.o : main/osd/osd_max7456.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_screen.o : main/osd/osd_screen.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_serial.o : main/osd/osd_serial.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/osd_tasks.o : main/osd/osd_tasks.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/font_max7456_12x18.o : main/osd/fonts/font_max7456_12x18.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 

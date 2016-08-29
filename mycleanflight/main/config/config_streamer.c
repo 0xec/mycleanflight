@@ -30,6 +30,8 @@
 #  define FLASH_PAGE_SIZE                 (0x800)
 # elif defined(UNIT_TEST)
 #  define FLASH_PAGE_SIZE                 (0x400)
+# elif defined(STM32F401xE)
+#  define FLASH_PAGE_SIZE                 (0x400) // TODO: code here
 # else
 #  error "Flash page size not defined for target."
 # endif
@@ -56,6 +58,8 @@ void config_streamer_start(config_streamer_t *c, uintptr_t base, int size)
     FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_PGERR | FLASH_FLAG_WRPRTERR);
 #elif defined(UNIT_TEST)
     // NOP
+#elif defined(STM32F401xE)
+	// TODO: code here
 #else
 # error "Unsupported CPU"
 #endif
@@ -64,6 +68,9 @@ void config_streamer_start(config_streamer_t *c, uintptr_t base, int size)
 
 static int write_word(config_streamer_t *c, uint32_t value)
 {
+#if defined(USE_HAL)
+	// TODO: code here
+#else
     if (c->err != 0) {
         return c->err;
     }
@@ -81,6 +88,7 @@ static int write_word(config_streamer_t *c, uint32_t value)
         return -2;
     }
     c->address += sizeof(value);
+#endif
     return 0;
 }
 

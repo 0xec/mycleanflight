@@ -58,46 +58,46 @@ void EXTIHandlerInit(extiCallbackRec_t *self, extiHandlerCallback *fn)
 {
     self->fn = fn;
 }
-
-void EXTIConfig(IO_t io, extiCallbackRec_t *cb, int irqPriority, EXTITrigger_TypeDef trigger)
-{
-    int chIdx;
-    chIdx = IO_GPIOPinIdx(io);
-    if(chIdx < 0)
-        return;
-    extiChannelRec_t *rec = &extiChannelRecs[chIdx];
-    int group = extiGroups[chIdx];
-
-    rec->handler = cb;
-#if defined(STM32F10X)
-    GPIO_EXTILineConfig(IO_GPIO_PortSource(io), IO_GPIO_PinSource(io));
-#elif defined(STM32F303xC)
-    SYSCFG_EXTILineConfig(IO_EXTI_PortSourceGPIO(io), IO_EXTI_PinSource(io));
-#else
-# warning "Unsupported CPU"
-#endif
-    uint32_t extiLine = IO_EXTI_Line(io);
-
-    EXTI_ClearITPendingBit(extiLine);
-
-    EXTI_InitTypeDef EXTIInit;
-    EXTIInit.EXTI_Line = extiLine;
-    EXTIInit.EXTI_Mode = EXTI_Mode_Interrupt;
-    EXTIInit.EXTI_Trigger = trigger;
-    EXTIInit.EXTI_LineCmd = ENABLE;
-    EXTI_Init(&EXTIInit);
-
-    if(extiGroupPriority[group] > irqPriority) {
-        extiGroupPriority[group] = irqPriority;
-
-        NVIC_InitTypeDef NVIC_InitStructure;
-        NVIC_InitStructure.NVIC_IRQChannel = extiGroupIRQn[group];
-        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = NVIC_PRIORITY_BASE(irqPriority);
-        NVIC_InitStructure.NVIC_IRQChannelSubPriority = NVIC_PRIORITY_SUB(irqPriority);
-        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-        NVIC_Init(&NVIC_InitStructure);
-    }
-}
+//
+//void EXTIConfig(IO_t io, extiCallbackRec_t *cb, int irqPriority, EXTITrigger_TypeDef trigger)
+//{
+//    int chIdx;
+//    chIdx = IO_GPIOPinIdx(io);
+//    if(chIdx < 0)
+//        return;
+//    extiChannelRec_t *rec = &extiChannelRecs[chIdx];
+//    int group = extiGroups[chIdx];
+//
+//    rec->handler = cb;
+//#if defined(STM32F10X)
+//    GPIO_EXTILineConfig(IO_GPIO_PortSource(io), IO_GPIO_PinSource(io));
+//#elif defined(STM32F303xC)
+//    SYSCFG_EXTILineConfig(IO_EXTI_PortSourceGPIO(io), IO_EXTI_PinSource(io));
+//#else
+//# warning "Unsupported CPU"
+//#endif
+//    uint32_t extiLine = IO_EXTI_Line(io);
+//
+//    EXTI_ClearITPendingBit(extiLine);
+//
+//    EXTI_InitTypeDef EXTIInit;
+//    EXTIInit.EXTI_Line = extiLine;
+//    EXTIInit.EXTI_Mode = EXTI_Mode_Interrupt;
+//    EXTIInit.EXTI_Trigger = trigger;
+//    EXTIInit.EXTI_LineCmd = ENABLE;
+//    EXTI_Init(&EXTIInit);
+//
+//    if(extiGroupPriority[group] > irqPriority) {
+//        extiGroupPriority[group] = irqPriority;
+//
+//        NVIC_InitTypeDef NVIC_InitStructure;
+//        NVIC_InitStructure.NVIC_IRQChannel = extiGroupIRQn[group];
+//        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = NVIC_PRIORITY_BASE(irqPriority);
+//        NVIC_InitStructure.NVIC_IRQChannelSubPriority = NVIC_PRIORITY_SUB(irqPriority);
+//        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+//        NVIC_Init(&NVIC_InitStructure);
+//    }
+//}
 
 void EXTIRelease(IO_t io)
 {

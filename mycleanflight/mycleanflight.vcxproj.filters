@@ -122,18 +122,6 @@
     <Filter Include="Header files\main\msp">
       <UniqueIdentifier>{b4cd9aaf-ea47-46d2-8494-5341b908eed9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source files\main\osd">
-      <UniqueIdentifier>{e90f2b41-74d0-4f04-b12c-c3d32545eb81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\osd">
-      <UniqueIdentifier>{bc381c8f-bf4f-4867-a246-f693b9ea9b67}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source files\main\osd\fonts">
-      <UniqueIdentifier>{7814b782-64e4-4362-b624-fd205f4676f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\osd\fonts">
-      <UniqueIdentifier>{1012ed3a-9b5c-4166-bc1d-8437770bfdf3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source files\main\rx">
       <UniqueIdentifier>{f11fc610-e7ba-4de3-a7c6-0596d738073f}</UniqueIdentifier>
     </Filter>
@@ -155,80 +143,14 @@
     <Filter Include="Source files\main\target">
       <UniqueIdentifier>{d702432c-7204-434f-9b89-89e1ac27f0fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header files\main\target">
-      <UniqueIdentifier>{87e92322-1bd2-4a8a-b097-2fd6022ed774}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source files\main\target\ALIENFLIGHTF3">
       <UniqueIdentifier>{3b14b590-fc37-4911-8834-a729ecf62eb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\ALIENFLIGHTF3">
-      <UniqueIdentifier>{5d8966cb-25da-44c3-9410-bfff99880366}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\CC3D">
-      <UniqueIdentifier>{26787598-daca-43b3-9eb4-740969b6f474}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\CHEBUZZF3">
-      <UniqueIdentifier>{863279ab-92f9-4ea6-bc0e-6f21510598da}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\main\target\CJMCU">
       <UniqueIdentifier>{67c37147-9fd0-43d0-a7f1-b4305c6d04fe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header files\main\target\CJMCU">
-      <UniqueIdentifier>{22d4be25-923b-4c14-8a1f-9bace9e16210}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\COLIBRI_RACE">
-      <UniqueIdentifier>{1666fcf9-da66-431e-ae98-b8daa6aad81f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\EUSTM32F103RC">
-      <UniqueIdentifier>{1a54c3f5-bb2d-4226-8e2c-345e54d8d775}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\IRCFUSIONF3">
-      <UniqueIdentifier>{061589d8-a1a5-4ea9-969d-313ff92c3eca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\LUX_RACE">
-      <UniqueIdentifier>{7379cfd1-3591-44d7-be58-4096f125d198}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\MOTOLAB">
-      <UniqueIdentifier>{5c687d92-0cb2-424d-b907-dfb93877fd7f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source files\main\target\NAZE">
       <UniqueIdentifier>{8a8a0fd1-6ea9-49d8-90c5-068767db3f1a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\NAZE">
-      <UniqueIdentifier>{0cbfd4bf-034f-41c5-900d-e6abd312ad9c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\OLIMEXINO">
-      <UniqueIdentifier>{a0a1cfbd-25bd-4917-ad01-5cf3d48600a1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\PORT103R">
-      <UniqueIdentifier>{1e3fac9a-6c61-4a1c-bf74-09436e6d1e61}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\RCEXPLORERF3">
-      <UniqueIdentifier>{325e8a62-2907-40fb-9e81-5646c5227735}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\RMDO">
-      <UniqueIdentifier>{baa2b957-c6b6-4092-9b8e-c8e5340387db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPARKY">
-      <UniqueIdentifier>{cbadf32e-2506-47e7-8dd0-f4d233eb78d8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPRACINGF1OSD">
-      <UniqueIdentifier>{21d0146f-3999-4dad-9a11-71af7207e14f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPRACINGF3">
-      <UniqueIdentifier>{84fb9c9a-3eac-4521-88eb-398c89a39fa1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPRACINGF3EVO">
-      <UniqueIdentifier>{1abe5869-be4c-4641-ba71-a58008708b6f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPRACINGF3MINI">
-      <UniqueIdentifier>{9cd57ff6-1620-4d03-8561-410f834ced80}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\SPRACINGF3OSD">
-      <UniqueIdentifier>{b50c255c-a416-4869-8209-a7079f1854c0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\main\target\STM32F3DISCOVERY">
-      <UniqueIdentifier>{6bc025f4-8162-4c1a-a494-02b7068088ce}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\main\telemetry">
       <UniqueIdentifier>{43b596e8-039e-460a-aabd-2f164528091d}</UniqueIdentifier>
@@ -241,6 +163,138 @@
     </Filter>
     <Filter Include="Header files\main\vcp">
       <UniqueIdentifier>{951111b4-e34b-4b08-8013-4047472f78fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target">
+      <UniqueIdentifier>{afc7de69-8105-4f24-abd1-c73407675447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\ALIENFLIGHTF3">
+      <UniqueIdentifier>{5b584bb7-6a26-4f18-8a2f-0838777482c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\CC3D">
+      <UniqueIdentifier>{f550082c-8b52-47e0-8dc3-6209bed1f205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\CHEBUZZF3">
+      <UniqueIdentifier>{35a0e02d-5b11-4a40-b0a9-44ecf24bedf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\CJMCU">
+      <UniqueIdentifier>{bf2eca80-86a4-499b-934f-613192b9abb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\COLIBRI_RACE">
+      <UniqueIdentifier>{2408b233-1ac0-4aa0-969a-8766675f463a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\EUSTM32F103RC">
+      <UniqueIdentifier>{d50d0a1b-8ffd-459e-ae54-fd636593fdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\IRCFUSIONF3">
+      <UniqueIdentifier>{9b1ef19b-1cb4-4025-b924-9b86fd453125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\LUX_RACE">
+      <UniqueIdentifier>{3ecf9231-4d3a-4bda-92ef-c00c7e5744fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\MOTOLAB">
+      <UniqueIdentifier>{e0c90c78-670b-4cc7-bba7-f8c790d64351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\NAZE">
+      <UniqueIdentifier>{d62d319c-0657-47ea-8878-13e02efb98e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\OLIMEXINO">
+      <UniqueIdentifier>{429f0813-082f-4a2e-91c8-7a4c6f880fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\PORT103R">
+      <UniqueIdentifier>{9b46234c-5618-4281-86fc-a2ab0d813e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\RCEXPLORERF3">
+      <UniqueIdentifier>{6192cb82-1bde-449a-958e-34f152982498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\RMDO">
+      <UniqueIdentifier>{4101e291-e859-4087-bbaf-2cac47e36dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPARKY">
+      <UniqueIdentifier>{68152071-9f43-484e-a7a4-9ed144a0615e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPRACINGF1OSD">
+      <UniqueIdentifier>{d9609f69-0797-4cd1-8e70-39b5a9100e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPRACINGF3">
+      <UniqueIdentifier>{5cad069b-14d3-4024-b7a3-2354cb3d97c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPRACINGF3EVO">
+      <UniqueIdentifier>{7385caf7-5bd9-45aa-9acc-173f61e26ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPRACINGF3MINI">
+      <UniqueIdentifier>{9a188c22-2469-4f6d-a7be-cc193abfabd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\SPRACINGF3OSD">
+      <UniqueIdentifier>{9fce580d-baf3-4c74-b7bd-c8ce3c8a78cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\STM32F3DISCOVERY">
+      <UniqueIdentifier>{dd74971a-89a3-4b13-9718-7e0ce5ab202d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\target\STM32F401RE">
+      <UniqueIdentifier>{59653e9f-55e3-4ae0-b1cd-84003c62f5b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\main\target">
+      <UniqueIdentifier>{0013f77f-cb87-4c49-9ce4-e8eb27880dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\CC3D">
+      <UniqueIdentifier>{82028f55-9c58-478f-99df-9c8adbe751b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\CHEBUZZF3">
+      <UniqueIdentifier>{0a93545f-52dd-4b42-9aa1-ed81597d4680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\COLIBRI_RACE">
+      <UniqueIdentifier>{3c5e238d-aa83-482d-bed5-e1dae1645e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\EUSTM32F103RC">
+      <UniqueIdentifier>{de94d682-f4f5-4ea3-aa1a-d41db8ff71ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\IRCFUSIONF3">
+      <UniqueIdentifier>{dc92afff-c995-46fd-b722-ceb4fcf6059d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\LUX_RACE">
+      <UniqueIdentifier>{881c1fd1-ecc6-4fb4-aafa-5d8db79ad891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\MOTOLAB">
+      <UniqueIdentifier>{b7984497-82f9-4f4e-bb47-a3cb75fe64c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\OLIMEXINO">
+      <UniqueIdentifier>{633b2aba-037d-4080-8700-898d09520c93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\PORT103R">
+      <UniqueIdentifier>{f8da547c-ed91-4697-9ac3-4b73310b751a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\RCEXPLORERF3">
+      <UniqueIdentifier>{ac184ca6-ab8b-4767-ac85-dc05f4b9b4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\RMDO">
+      <UniqueIdentifier>{4e8d33d1-a66c-4bab-aae7-98edd963b41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPARKY">
+      <UniqueIdentifier>{a3ed2795-1f63-4782-a730-9fe53b57e8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPRACINGF1OSD">
+      <UniqueIdentifier>{352ab3b0-6b6f-48d1-b2f0-e7c1386d6093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPRACINGF3">
+      <UniqueIdentifier>{23e2a150-7dc4-4770-b76c-0c7d67d1a469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPRACINGF3EVO">
+      <UniqueIdentifier>{3499f1ac-6663-4137-b9df-dafbb0a3f785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPRACINGF3MINI">
+      <UniqueIdentifier>{24f7a17e-6a8b-4e60-b5b0-aea83f81ca08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\SPRACINGF3OSD">
+      <UniqueIdentifier>{bda3866d-b891-4f48-a098-7805de72a3ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\STM32F3DISCOVERY">
+      <UniqueIdentifier>{babe5378-845b-49e3-8b7b-6a52621695db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\main\target\STM32F401RE">
+      <UniqueIdentifier>{30345a8f-e8a8-4ee8-a030-e74a2ce82fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\main\target\STM32F401RE">
+      <UniqueIdentifier>{d45a64b2-38a7-4068-a080-33c2e9ab8e2f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -481,52 +535,10 @@
     <ClCompile Include="main\drivers\accgyro_adxl345.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_bma280.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\accgyro_l3g4200d.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_l3gd20.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_lsm303dlhc.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_mma845x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_mpu.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_mpu3050.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_mpu6050.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_mpu6500.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_spi_mpu6000.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\accgyro_spi_mpu6500.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\adc.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\adc_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\adc_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\barometer_bmp085.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\barometer_bmp280.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
     <ClCompile Include="main\drivers\barometer_ms5611.c">
@@ -538,25 +550,10 @@
     <ClCompile Include="main\drivers\bus_i2c_soft.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\bus_i2c_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\bus_i2c_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\bus_spi.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\compass_ak8963.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\compass_ak8975.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\compass_hmc5883l.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\display_ug2864hsweg01.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
     <ClCompile Include="main\drivers\dma.c">
@@ -568,12 +565,6 @@
     <ClCompile Include="main\drivers\flash_m25p16.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\gpio_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\gpio_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\gyro_sync.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
@@ -583,19 +574,7 @@
     <ClCompile Include="main\drivers\io.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\light_led_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\light_led_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\light_ws2811strip.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\light_ws2811strip_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\light_ws2811strip_stm32f30x.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
     <ClCompile Include="main\drivers\pwm_mapping.c">
@@ -625,43 +604,16 @@
     <ClCompile Include="main\drivers\serial_uart.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\serial_uart_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\serial_uart_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\serial_usb_vcp.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
     <ClCompile Include="main\drivers\sonar_hcsr04.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\sound_beeper.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\sound_beeper_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\sound_beeper_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\system.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
-    <ClCompile Include="main\drivers\system_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\system_stm32f30x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
     <ClCompile Include="main\drivers\timer.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\timer_stm32f10x.c">
-      <Filter>Source files\main\drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="main\drivers\timer_stm32f30x.c">
       <Filter>Source files\main\drivers</Filter>
     </ClCompile>
     <ClCompile Include="main\drivers\transponder_ir.c">
@@ -799,48 +751,6 @@
     <ClCompile Include="main\msp\msp_serial.c">
       <Filter>Source files\main\msp</Filter>
     </ClCompile>
-    <ClCompile Include="main\osd\boot.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\cleanflight_osd.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\config.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\fc_state.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\msp_client_osd.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\msp_server_osd.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_element.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_element_render.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_max7456.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_screen.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_serial.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\osd_tasks.c">
-      <Filter>Source files\main\osd</Filter>
-    </ClCompile>
-    <ClCompile Include="main\osd\fonts\font_max7456_12x18.c">
-      <Filter>Source files\main\osd\fonts</Filter>
-    </ClCompile>
     <ClCompile Include="main\rx\ibus.c">
       <Filter>Source files\main\rx</Filter>
     </ClCompile>
@@ -951,6 +861,9 @@
     </ClCompile>
     <ClCompile Include="main\vcp\usb_pwr.c">
       <Filter>Source files\main\vcp</Filter>
+    </ClCompile>
+    <ClCompile Include="main\drivers\sound_beeper.c">
+      <Filter>Source files\main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1302,37 +1215,10 @@
     <ClInclude Include="main\drivers\accgyro_adxl345.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_bma280.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
     <ClInclude Include="main\drivers\accgyro_l3g4200d.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_l3gd20.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_lsm303dlhc.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_mma845x.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
     <ClInclude Include="main\drivers\accgyro_mpu.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_mpu3050.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_mpu6050.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_mpu6500.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_spi_mpu6000.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\accgyro_spi_mpu6500.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
     <ClInclude Include="main\drivers\adc.h">
@@ -1342,12 +1228,6 @@
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
     <ClInclude Include="main\drivers\barometer.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\barometer_bmp085.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\barometer_bmp280.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
     <ClInclude Include="main\drivers\barometer_ms5611.h">
@@ -1365,16 +1245,7 @@
     <ClInclude Include="main\drivers\compass.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
-    <ClInclude Include="main\drivers\compass_ak8963.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\compass_ak8975.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
     <ClInclude Include="main\drivers\compass_hmc5883l.h">
-      <Filter>Header files\main\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="main\drivers\display_ug2864hsweg01.h">
       <Filter>Header files\main\drivers</Filter>
     </ClInclude>
     <ClInclude Include="main\drivers\dma.h">
@@ -2484,42 +2355,6 @@
     <ClInclude Include="main\msp\msp_serial.h">
       <Filter>Header files\main\msp</Filter>
     </ClInclude>
-    <ClInclude Include="main\osd\cleanflight_osd.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\config.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\fc_state.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\msp_client_osd.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\msp_server_osd.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd_element.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd_element_render.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd_screen.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd_serial.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\osd_tasks.h">
-      <Filter>Header files\main\osd</Filter>
-    </ClInclude>
-    <ClInclude Include="main\osd\fonts\font_max7456_12x18.h">
-      <Filter>Header files\main\osd\fonts</Filter>
-    </ClInclude>
     <ClInclude Include="main\rx\ibus.h">
       <Filter>Header files\main\rx</Filter>
     </ClInclude>
@@ -2580,81 +2415,6 @@
     <ClInclude Include="main\sensors\sonar.h">
       <Filter>Header files\main\sensors</Filter>
     </ClInclude>
-    <ClInclude Include="main\target\system_stm32f30x.h">
-      <Filter>Header files\main\target</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\ALIENFLIGHTF3\hardware_revision.h">
-      <Filter>Header files\main\target\ALIENFLIGHTF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\ALIENFLIGHTF3\target.h">
-      <Filter>Header files\main\target\ALIENFLIGHTF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\CC3D\target.h">
-      <Filter>Header files\main\target\CC3D</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\CHEBUZZF3\target.h">
-      <Filter>Header files\main\target\CHEBUZZF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\CJMCU\hardware_revision.h">
-      <Filter>Header files\main\target\CJMCU</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\CJMCU\target.h">
-      <Filter>Header files\main\target\CJMCU</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\COLIBRI_RACE\target.h">
-      <Filter>Header files\main\target\COLIBRI_RACE</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\EUSTM32F103RC\target.h">
-      <Filter>Header files\main\target\EUSTM32F103RC</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\IRCFUSIONF3\target.h">
-      <Filter>Header files\main\target\IRCFUSIONF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\LUX_RACE\target.h">
-      <Filter>Header files\main\target\LUX_RACE</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\MOTOLAB\target.h">
-      <Filter>Header files\main\target\MOTOLAB</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\NAZE\hardware_revision.h">
-      <Filter>Header files\main\target\NAZE</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\NAZE\target.h">
-      <Filter>Header files\main\target\NAZE</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\OLIMEXINO\target.h">
-      <Filter>Header files\main\target\OLIMEXINO</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\PORT103R\target.h">
-      <Filter>Header files\main\target\PORT103R</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\RCEXPLORERF3\target.h">
-      <Filter>Header files\main\target\RCEXPLORERF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\RMDO\target.h">
-      <Filter>Header files\main\target\RMDO</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPARKY\target.h">
-      <Filter>Header files\main\target\SPARKY</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPRACINGF1OSD\target.h">
-      <Filter>Header files\main\target\SPRACINGF1OSD</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPRACINGF3\target.h">
-      <Filter>Header files\main\target\SPRACINGF3</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPRACINGF3EVO\target.h">
-      <Filter>Header files\main\target\SPRACINGF3EVO</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPRACINGF3MINI\target.h">
-      <Filter>Header files\main\target\SPRACINGF3MINI</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\SPRACINGF3OSD\target.h">
-      <Filter>Header files\main\target\SPRACINGF3OSD</Filter>
-    </ClInclude>
-    <ClInclude Include="main\target\STM32F3DISCOVERY\target.h">
-      <Filter>Header files\main\target\STM32F3DISCOVERY</Filter>
-    </ClInclude>
     <ClInclude Include="main\telemetry\frsky.h">
       <Filter>Header files\main\telemetry</Filter>
     </ClInclude>
@@ -2696,6 +2456,12 @@
     </ClInclude>
     <ClInclude Include="main\vcp\usb_pwr.h">
       <Filter>Header files\main\vcp</Filter>
+    </ClInclude>
+    <ClInclude Include="main\target\system_stm32f30x.h">
+      <Filter>Header files\main\target</Filter>
+    </ClInclude>
+    <ClInclude Include="main\target\STM32F401RE\target.h">
+      <Filter>Header files\main\target\STM32F401RE</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

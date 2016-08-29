@@ -68,6 +68,9 @@
 
 static void l3gd20SpiInit(SPI_TypeDef *SPIx)
 {
+#if defined(USE_HAL)
+	// TODO: code here
+#else
     UNUSED(SPIx); // FIXME
     GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -84,10 +87,14 @@ static void l3gd20SpiInit(SPI_TypeDef *SPIx)
     GPIO_SetBits(L3GD20_CS_GPIO, L3GD20_CS_PIN);
 
     spiSetDivisor(L3GD20_SPI, SPI_9MHZ_CLOCK_DIVIDER);
+#endif
 }
 
 void l3gd20GyroInit(uint8_t lpf)
 {
+#if defined(USE_HAL)
+	// TODO: code here
+#else
     UNUSED(lpf); // FIXME use it!
 
     l3gd20SpiInit(L3GD20_SPI);
@@ -120,10 +127,14 @@ void l3gd20GyroInit(uint8_t lpf)
     GPIO_SetBits(L3GD20_CS_GPIO, L3GD20_CS_PIN);
 
     delay(100);
+#endif
 }
 
 static bool l3gd20GyroRead(int16_t *gyroADC)
 {
+#if defined(USE_HAL)
+	// TODO: code here
+#else
     uint8_t buf[6];
 
     GPIO_ResetBits(L3GD20_CS_GPIO, L3GD20_CS_PIN);
@@ -145,7 +156,7 @@ static bool l3gd20GyroRead(int16_t *gyroADC)
     debug[1] = (int16_t)((buf[3] << 8) | buf[2]);
     debug[2] = (int16_t)((buf[5] << 8) | buf[4]);
 #endif
-
+#endif
     return true;
 }
 

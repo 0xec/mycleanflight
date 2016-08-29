@@ -43,5 +43,16 @@
 
 #endif // STM32F10X
 
+#ifdef STM32F401xE
+
+#include "stm32f4xx_hal_conf.h"
+
+// Chip Unique ID on F303
+#define U_ID_0 (*(uint32_t*)0x1FFFF7AC)
+#define U_ID_1 (*(uint32_t*)0x1FFFF7B0)
+#define U_ID_2 (*(uint32_t*)0x1FFFF7B4)
+
+#endif
+
 #include "target.h"
 

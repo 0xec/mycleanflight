@@ -597,6 +597,9 @@
 #ifndef __UDQ_FBIT__
 #define __UDQ_FBIT__ 64
 #endif
+#ifndef DEBUG
+#define DEBUG 1
+#endif
 #ifndef __INT8_TYPE__
 #define __INT8_TYPE__ signed char
 #endif
@@ -770,6 +773,9 @@
 #endif
 #ifndef __UINT16_TYPE__
 #define __UINT16_TYPE__ short unsigned int
+#endif
+#ifndef USE_HAL
+#define USE_HAL 1
 #endif
 #ifndef __WCHAR_TYPE__
 #define __WCHAR_TYPE__ unsigned int
@@ -1080,9 +1086,6 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef DEBUG
-#define DEBUG 
-#endif
 #endif
 
 // --- Include directories begin --- //
@@ -1098,6 +1101,8 @@
 //c:\sysgcc\arm-eabi\bin\../lib/gcc/arm-eabi/5.3.0/include-fixed
 //c:\sysgcc\arm-eabi\bin\../lib/gcc/arm-eabi/5.3.0/../../../../arm-eabi/sys-include
 //c:\sysgcc\arm-eabi\bin\../lib/gcc/arm-eabi/5.3.0/../../../../arm-eabi/include
+//./main
+//./main/target/STM32F401RE
 // --- Include directories end --- //
 
 

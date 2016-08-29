@@ -61,9 +61,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>c:\Users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(ProjectDir)\./main;$(ProjectDir)\./main/target/STM32F401RE;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
-    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
@@ -71,6 +70,7 @@
     <IncludePath />
     <ReferencePath />
     <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <NMakeIncludeSearchPath>c:\users\xec\documents\Projects\mycleanflight\mycleanflight;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
@@ -190,45 +190,20 @@
     <ClCompile Include="main\config\parameter_group.c" />
     <ClCompile Include="main\config\profile.c" />
     <ClCompile Include="main\drivers\accgyro_adxl345.c" />
-    <ClCompile Include="main\drivers\accgyro_bma280.c" />
     <ClCompile Include="main\drivers\accgyro_l3g4200d.c" />
-    <ClCompile Include="main\drivers\accgyro_l3gd20.c" />
-    <ClCompile Include="main\drivers\accgyro_lsm303dlhc.c" />
-    <ClCompile Include="main\drivers\accgyro_mma845x.c" />
-    <ClCompile Include="main\drivers\accgyro_mpu.c" />
-    <ClCompile Include="main\drivers\accgyro_mpu3050.c" />
-    <ClCompile Include="main\drivers\accgyro_mpu6050.c" />
-    <ClCompile Include="main\drivers\accgyro_mpu6500.c" />
-    <ClCompile Include="main\drivers\accgyro_spi_mpu6000.c" />
-    <ClCompile Include="main\drivers\accgyro_spi_mpu6500.c" />
     <ClCompile Include="main\drivers\adc.c" />
-    <ClCompile Include="main\drivers\adc_stm32f10x.c" />
-    <ClCompile Include="main\drivers\adc_stm32f30x.c" />
-    <ClCompile Include="main\drivers\barometer_bmp085.c" />
-    <ClCompile Include="main\drivers\barometer_bmp280.c" />
     <ClCompile Include="main\drivers\barometer_ms5611.c" />
     <ClCompile Include="main\drivers\buf_writer.c" />
     <ClCompile Include="main\drivers\bus_i2c_soft.c" />
-    <ClCompile Include="main\drivers\bus_i2c_stm32f10x.c" />
-    <ClCompile Include="main\drivers\bus_i2c_stm32f30x.c" />
     <ClCompile Include="main\drivers\bus_spi.c" />
-    <ClCompile Include="main\drivers\compass_ak8963.c" />
-    <ClCompile Include="main\drivers\compass_ak8975.c" />
     <ClCompile Include="main\drivers\compass_hmc5883l.c" />
-    <ClCompile Include="main\drivers\display_ug2864hsweg01.c" />
     <ClCompile Include="main\drivers\dma.c" />
     <ClCompile Include="main\drivers\exti.c" />
     <ClCompile Include="main\drivers\flash_m25p16.c" />
-    <ClCompile Include="main\drivers\gpio_stm32f10x.c" />
-    <ClCompile Include="main\drivers\gpio_stm32f30x.c" />
     <ClCompile Include="main\drivers\gyro_sync.c" />
     <ClCompile Include="main\drivers\inverter.c" />
     <ClCompile Include="main\drivers\io.c" />
-    <ClCompile Include="main\drivers\light_led_stm32f10x.c" />
-    <ClCompile Include="main\drivers\light_led_stm32f30x.c" />
     <ClCompile Include="main\drivers\light_ws2811strip.c" />
-    <ClCompile Include="main\drivers\light_ws2811strip_stm32f10x.c" />
-    <ClCompile Include="main\drivers\light_ws2811strip_stm32f30x.c" />
     <ClCompile Include="main\drivers\pwm_mapping.c" />
     <ClCompile Include="main\drivers\pwm_output.c" />
     <ClCompile Include="main\drivers\pwm_rx.c" />
@@ -238,19 +213,11 @@
     <ClCompile Include="main\drivers\serial.c" />
     <ClCompile Include="main\drivers\serial_softserial.c" />
     <ClCompile Include="main\drivers\serial_uart.c" />
-    <ClCompile Include="main\drivers\serial_uart_stm32f10x.c" />
-    <ClCompile Include="main\drivers\serial_uart_stm32f30x.c" />
     <ClCompile Include="main\drivers\serial_usb_vcp.c" />
     <ClCompile Include="main\drivers\sonar_hcsr04.c" />
     <ClCompile Include="main\drivers\sound_beeper.c" />
-    <ClCompile Include="main\drivers\sound_beeper_stm32f10x.c" />
-    <ClCompile Include="main\drivers\sound_beeper_stm32f30x.c" />
     <ClCompile Include="main\drivers\system.c" />
-    <ClCompile Include="main\drivers\system_stm32f10x.c" />
-    <ClCompile Include="main\drivers\system_stm32f30x.c" />
     <ClCompile Include="main\drivers\timer.c" />
-    <ClCompile Include="main\drivers\timer_stm32f10x.c" />
-    <ClCompile Include="main\drivers\timer_stm32f30x.c" />
     <ClCompile Include="main\drivers\transponder_ir.c" />
     <ClCompile Include="main\drivers\transponder_ir_stm32f30x.c" />
     <ClCompile Include="main\drivers\usb_io.c" />
@@ -296,20 +263,6 @@
     <ClCompile Include="main\io\asyncfatfs\fat_standard.c" />
     <ClCompile Include="main\msp\msp.c" />
     <ClCompile Include="main\msp\msp_serial.c" />
-    <ClCompile Include="main\osd\boot.c" />
-    <ClCompile Include="main\osd\cleanflight_osd.c" />
-    <ClCompile Include="main\osd\config.c" />
-    <ClCompile Include="main\osd\fc_state.c" />
-    <ClCompile Include="main\osd\msp_client_osd.c" />
-    <ClCompile Include="main\osd\msp_server_osd.c" />
-    <ClCompile Include="main\osd\osd.c" />
-    <ClCompile Include="main\osd\osd_element.c" />
-    <ClCompile Include="main\osd\osd_element_render.c" />
-    <ClCompile Include="main\osd\osd_max7456.c" />
-    <ClCompile Include="main\osd\osd_screen.c" />
-    <ClCompile Include="main\osd\osd_serial.c" />
-    <ClCompile Include="main\osd\osd_tasks.c" />
-    <ClCompile Include="main\osd\fonts\font_max7456_12x18.c" />
     <ClCompile Include="main\rx\ibus.c" />
     <ClCompile Include="main\rx\msp.c" />
     <ClCompile Include="main\rx\pwm.c" />
@@ -434,6 +387,8 @@
     <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fsmc.h" />
     <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h" />
     <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h" />
+    <ClInclude Include="main\target\STM32F401RE\target.h" />
+    <ClInclude Include="main\target\system_stm32f30x.h" />
     <ClInclude Include="stm32f4xx_hal_conf.h" />
     <ClInclude Include="main\platform.h" />
     <ClInclude Include="main\blackbox\blackbox.h" />
@@ -465,31 +420,17 @@
     <ClInclude Include="main\config\profile.h" />
     <ClInclude Include="main\drivers\accgyro.h" />
     <ClInclude Include="main\drivers\accgyro_adxl345.h" />
-    <ClInclude Include="main\drivers\accgyro_bma280.h" />
     <ClInclude Include="main\drivers\accgyro_l3g4200d.h" />
-    <ClInclude Include="main\drivers\accgyro_l3gd20.h" />
-    <ClInclude Include="main\drivers\accgyro_lsm303dlhc.h" />
-    <ClInclude Include="main\drivers\accgyro_mma845x.h" />
     <ClInclude Include="main\drivers\accgyro_mpu.h" />
-    <ClInclude Include="main\drivers\accgyro_mpu3050.h" />
-    <ClInclude Include="main\drivers\accgyro_mpu6050.h" />
-    <ClInclude Include="main\drivers\accgyro_mpu6500.h" />
-    <ClInclude Include="main\drivers\accgyro_spi_mpu6000.h" />
-    <ClInclude Include="main\drivers\accgyro_spi_mpu6500.h" />
     <ClInclude Include="main\drivers\adc.h" />
     <ClInclude Include="main\drivers\adc_impl.h" />
     <ClInclude Include="main\drivers\barometer.h" />
-    <ClInclude Include="main\drivers\barometer_bmp085.h" />
-    <ClInclude Include="main\drivers\barometer_bmp280.h" />
     <ClInclude Include="main\drivers\barometer_ms5611.h" />
     <ClInclude Include="main\drivers\buf_writer.h" />
     <ClInclude Include="main\drivers\bus_i2c.h" />
     <ClInclude Include="main\drivers\bus_spi.h" />
     <ClInclude Include="main\drivers\compass.h" />
-    <ClInclude Include="main\drivers\compass_ak8963.h" />
-    <ClInclude Include="main\drivers\compass_ak8975.h" />
     <ClInclude Include="main\drivers\compass_hmc5883l.h" />
-    <ClInclude Include="main\drivers\display_ug2864hsweg01.h" />
     <ClInclude Include="main\drivers\dma.h" />
     <ClInclude Include="main\drivers\exti.h" />
     <ClInclude Include="main\drivers\flash.h" />
@@ -859,18 +800,6 @@
     <ClInclude Include="main\msp\msp.h" />
     <ClInclude Include="main\msp\msp_protocol.h" />
     <ClInclude Include="main\msp\msp_serial.h" />
-    <ClInclude Include="main\osd\cleanflight_osd.h" />
-    <ClInclude Include="main\osd\config.h" />
-    <ClInclude Include="main\osd\fc_state.h" />
-    <ClInclude Include="main\osd\msp_client_osd.h" />
-    <ClInclude Include="main\osd\msp_server_osd.h" />
-    <ClInclude Include="main\osd\osd.h" />
-    <ClInclude Include="main\osd\osd_element.h" />
-    <ClInclude Include="main\osd\osd_element_render.h" />
-    <ClInclude Include="main\osd\osd_screen.h" />
-    <ClInclude Include="main\osd\osd_serial.h" />
-    <ClInclude Include="main\osd\osd_tasks.h" />
-    <ClInclude Include="main\osd\fonts\font_max7456_12x18.h" />
     <ClInclude Include="main\rx\ibus.h" />
     <ClInclude Include="main\rx\msp.h" />
     <ClInclude Include="main\rx\pwm.h" />
@@ -891,31 +820,6 @@
     <ClInclude Include="main\sensors\initialisation.h" />
     <ClInclude Include="main\sensors\sensors.h" />
     <ClInclude Include="main\sensors\sonar.h" />
-    <ClInclude Include="main\target\system_stm32f30x.h" />
-    <ClInclude Include="main\target\ALIENFLIGHTF3\hardware_revision.h" />
-    <ClInclude Include="main\target\ALIENFLIGHTF3\target.h" />
-    <ClInclude Include="main\target\CC3D\target.h" />
-    <ClInclude Include="main\target\CHEBUZZF3\target.h" />
-    <ClInclude Include="main\target\CJMCU\hardware_revision.h" />
-    <ClInclude Include="main\target\CJMCU\target.h" />
-    <ClInclude Include="main\target\COLIBRI_RACE\target.h" />
-    <ClInclude Include="main\target\EUSTM32F103RC\target.h" />
-    <ClInclude Include="main\target\IRCFUSIONF3\target.h" />
-    <ClInclude Include="main\target\LUX_RACE\target.h" />
-    <ClInclude Include="main\target\MOTOLAB\target.h" />
-    <ClInclude Include="main\target\NAZE\hardware_revision.h" />
-    <ClInclude Include="main\target\NAZE\target.h" />
-    <ClInclude Include="main\target\OLIMEXINO\target.h" />
-    <ClInclude Include="main\target\PORT103R\target.h" />
-    <ClInclude Include="main\target\RCEXPLORERF3\target.h" />
-    <ClInclude Include="main\target\RMDO\target.h" />
-    <ClInclude Include="main\target\SPARKY\target.h" />
-    <ClInclude Include="main\target\SPRACINGF1OSD\target.h" />
-    <ClInclude Include="main\target\SPRACINGF3\target.h" />
-    <ClInclude Include="main\target\SPRACINGF3EVO\target.h" />
-    <ClInclude Include="main\target\SPRACINGF3MINI\target.h" />
-    <ClInclude Include="main\target\SPRACINGF3OSD\target.h" />
-    <ClInclude Include="main\target\STM32F3DISCOVERY\target.h" />
     <ClInclude Include="main\telemetry\frsky.h" />
     <ClInclude Include="main\telemetry\hott.h" />
     <ClInclude Include="main\telemetry\ltm.h" />

@@ -17,6 +17,41 @@
 
 #pragma once
 
+#if defined(USE_HAL)
+
+typedef enum
+{
+	Mode_AIN = 0x0,
+	Mode_IN_FLOATING = 0x04,
+	Mode_IPD = 0x28,
+	Mode_IPU = 0x48,
+	Mode_Out_OD = 0x14,
+	Mode_Out_PP = 0x10,
+	Mode_AF_OD = 0x1C,
+	Mode_AF_PP = 0x18
+} GPIO_Mode;
+
+typedef enum
+{
+	Speed_10MHz = 1,
+	Speed_2MHz,
+	Speed_50MHz
+} GPIO_Speed;
+
+typedef struct
+{
+	uint16_t pin;
+	GPIO_Mode mode;
+	GPIO_Speed speed;
+} gpio_config_t;
+
+
+void gpioInit(GPIO_TypeDef *gpio, const gpio_config_t *config);
+void gpioExtiLineConfig(uint8_t portsrc, uint8_t pinsrc);
+void gpioPinRemapConfig(uint32_t remap, bool enable);
+
+#else
+
 #if defined(STM32F10X)
 typedef enum
 {
@@ -118,3 +153,5 @@ uint16_t digitalIn(GPIO_TypeDef *p, uint16_t i);
 void gpioInit(GPIO_TypeDef *gpio, const gpio_config_t *config);
 void gpioExtiLineConfig(uint8_t portsrc, uint8_t pinsrc);
 void gpioPinRemapConfig(uint32_t remap, bool enable);
+
+#endif // USE_HAL
